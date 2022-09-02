@@ -9,7 +9,9 @@ const Home = () => (
     </Head>
 
     <main>
-      <h1 font-weight>Hello World!</h1>
+      <div className="flex justify-center">
+        <h1>Hello World!</h1>
+      </div>
     </main>
   </div>
 );
