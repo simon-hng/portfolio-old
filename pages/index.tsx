@@ -9,7 +9,7 @@ const Home = () => (
     </Head>
 
     <main>
-      <h1>Hello World!</h1>
+      <h1 font-weight>Hello World!</h1>
     </main>
   </div>
 );
