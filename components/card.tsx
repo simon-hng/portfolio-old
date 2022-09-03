@@ -11,7 +11,7 @@ interface cardProps {
 const Card = (props: cardProps) => (
   <div className="my-5 card">
     <h3>
-      <span className="font-bold text-xl">{props.headline}</span>
+      <span className="font-bold text-xl text-black dark:text-white">{props.headline}</span>
     </h3>
 
     <p className="text-sm">{props.subheadline}</p>

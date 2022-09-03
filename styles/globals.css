@@ -5,7 +5,7 @@
 @layer components {
   .card {
     @apply p-5;
-    @apply shadow;
+    @apply shadow-lg;
     @apply hover:shadow-md;
     @apply duration-200;
     @apply rounded-lg;

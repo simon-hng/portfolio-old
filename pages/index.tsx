@@ -10,30 +10,30 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main>
-      <div className="justify-center my-10">
-        <h1 className="text-6xl mb-5">Hi, I am Simon</h1>
+    <div>
+      <div className="my-10">
+        <h1 className="text-6xl mb-5 text-black dark:text-white">Hi, I am Simon</h1>
 
-        <p>
+        <p className="text-slate-500">
           Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
 
       <div className="mt-10">
-        <h2 className="font-bold text-xl">Working experience</h2>
+        <h2 className="font-bold text-xl text-black dark:text-white">Working experience</h2>
         {cv.work.map((item) => (
           <Card key={item.headline} {...item} />
         ))}
       </div>
 
       <div className="mt-10">
-        <h2 className="font-bold text-xl">Education</h2>
+        <h2 className="font-bold text-xl text-black dark:text-white">Education</h2>
         {cv.education.map((item) => (
           <Card key={item.headline} {...item} />
         ))}
       </div>
-    </main>
+    </div>
   </div>
 );
 
