@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Footer from "./footer";
-import Header from "./header";
 
 const Layout = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(
@@ -15,8 +14,6 @@ const Layout = ({ children }) => {
 
   return (
     <div className={isDarkMode && "dark"}>
-      <Header />
-
       <main className="bg-white text-slate-500 dark:bg-slate-900 dark:text-slate-400 p-10 duration-500">
         <button
           className="rounded-full border-solid border-2 border-slate-500 dark:border-slate-400 dark:text-slate-400 px-2"
