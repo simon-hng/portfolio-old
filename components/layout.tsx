@@ -14,15 +14,19 @@ const Layout = ({ children }) => {
 
   return (
     <div className={isDarkMode && "dark"}>
-      <main className="bg-white text-slate-500 dark:bg-slate-900 dark:text-slate-400 p-10 duration-500">
-        <button
-          className="rounded-full border-solid border-2 border-slate-500 dark:border-slate-400 dark:text-slate-400 px-2"
-          onClick={() => setIsDarkMode(!isDarkMode)}
-        >
-          change theme
-        </button>
-        {children}
-      </main>
+      <div className="bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 flex justify-center duration-500">
+        <main className="p-10 max-w-screen-lg">
+          <header className="flex flex-row-reverse">
+            <button
+              className="rounded-full border-solid border-2 border-slate-500 dark:border-slate-400 dark:text-slate-400 px-2"
+              onClick={() => setIsDarkMode(!isDarkMode)}
+            >
+              theme
+            </button>
+          </header>
+          {children}
+        </main>
+      </div>
 
       <Footer />
     </div>
