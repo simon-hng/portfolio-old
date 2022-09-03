@@ -5,7 +5,7 @@
       "headline": "Siemens AG",
       "location": "Munich",
       "subheadline": "Working student",
-      "date": "November 2021 – Now",
+      "date": ["2021-11-01", "now"],
       "description": [
         "Redesign of a frontend as a modern SPO with react",
         "CI/CD using GitLab CI/CD",
@@ -18,7 +18,7 @@
       "headline": "Technical University of Munich",
       "location": "Munich",
       "subheadline": "Tutor",
-      "date": "October 2020 – October 2021",
+      "date": ["2020-10-01", "2021-10-01"],
       "description": [
         "Maths preparation",
         "PGDP - Programming practical",
@@ -32,7 +32,7 @@
       "headline": "olli design",
       "location": "Hamburg",
       "subheadline": "frontend-developer",
-      "date": "Juli 2018 – Juli 2019",
+      "date": ["2018-07-01", "2019-07-01"],
       "description": [
         "Creation of corporate websites",
         "Usage of CMS like Typo3"
@@ -43,7 +43,7 @@
       "headline": "SinnerSchrader",
       "location": "Hamburg",
       "subheadline": "Practical in frontend development",
-      "date": "January 2018",
+      "date": ["2018-01-01"],
       "description": [
         " Experience in frontend development",
         " Usage of NodeJS, NPM, Gulp, Grunt, etc."
@@ -54,7 +54,7 @@
       "headline": "luca design",
       "location": "Hamburg",
       "subheadline": "frontend developer",
-      "date": "November 2016 – January 2017",
+      "date": ["2016-11-01", "2017-01-01"],
       "description": ["Experience in frontend development"]
     },
 
@@ -62,7 +62,7 @@
       "headline": "opus5",
       "location": "Hamburg",
       "subheadline": "Practical in frontend development",
-      "date": "January 2016",
+      "date": ["2016-01-01"],
       "description": [
         "Experience in frontend development",
         "Usage of Photoshop and Illustrator"
@@ -75,14 +75,14 @@
       "headline": "Technical University of Munich",
       "location": "Munich",
       "subheadline": "B.Sc. Informatik",
-      "date": "October 2019 – Now",
+      "date": ["2019-10-01", "now"],
       "description": "Application subject mathematics"
     },
     {
       "headline": "Gymnasium Klosterschule",
       "location": "Hamburg",
       "subheadline": "Abitur",
-      "date": "August 2011 – 21. June 2019"
+      "date": ["2011-08-01", "2019-06-21"]
     }
   ]
 }
