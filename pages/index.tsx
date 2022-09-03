@@ -1,6 +1,5 @@
 import Head from "next/head";
-import EducationCard from "../components/educationCard";
-import WorkCard from "../components/workCard";
+import Card from "../components/card";
 import cv from "./cv.json";
 
 const Home = () => (
@@ -24,14 +23,14 @@ const Home = () => (
       <div className="mt-10">
         <h2 className="font-bold text-xl">Working experience</h2>
         {cv.work.map((item) => (
-          <WorkCard key={item.name} {...item} />
+          <Card key={item.headline} {...item} />
         ))}
       </div>
 
       <div className="mt-10">
         <h2 className="font-bold text-xl">Education</h2>
         {cv.education.map((item) => (
-          <EducationCard key={item.name} {...item} />
+          <Card key={item.headline} {...item} />
         ))}
       </div>
     </main>

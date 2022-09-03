@@ -2,11 +2,11 @@
   "name": "Simon Huang",
   "work": [
     {
-      "name": "Siemens AG",
+      "headline": "Siemens AG",
       "location": "Munich",
-      "position": "Working student",
+      "subheadline": "Working student",
       "date": "November 2021 – Now",
-      "activities": [
+      "description": [
         "Redesign of a frontend as a modern SPO with react",
         "CI/CD using GitLab CI/CD",
         "Implementation of new features in Spring-boot",
@@ -15,11 +15,11 @@
     },
 
     {
-      "name": "Technical University of Munich",
+      "headline": "Technical University of Munich",
       "location": "Munich",
-      "position": "Tutor",
+      "subheadline": "Tutor",
       "date": "October 2020 – October 2021",
-      "activities": [
+      "description": [
         "Maths preparation",
         "PGDP - Programming practical",
         "EIST - Introduction to software engineering",
@@ -29,41 +29,41 @@
     },
 
     {
-      "name": "olli design",
+      "headline": "olli design",
       "location": "Hamburg",
-      "position": "frontend-developer",
+      "subheadline": "frontend-developer",
       "date": "Juli 2018 – Juli 2019",
-      "activities": [
+      "description": [
         "Creation of corporate websites",
         "Usage of CMS like Typo3"
       ]
     },
 
     {
-      "name": "SinnerSchrader",
+      "headline": "SinnerSchrader",
       "location": "Hamburg",
-      "position": "Practical in frontend development",
+      "subheadline": "Practical in frontend development",
       "date": "January 2018",
-      "activities": [
+      "description": [
         " Experience in frontend development",
         " Usage of NodeJS, NPM, Gulp, Grunt, etc."
       ]
     },
 
     {
-      "name": "luca design",
+      "headline": "luca design",
       "location": "Hamburg",
-      "position": "frontend developer",
+      "subheadline": "frontend developer",
       "date": "November 2016 – January 2017",
-      "activities": ["Experience in frontend development"]
+      "description": ["Experience in frontend development"]
     },
 
     {
-      "name": "opus5",
+      "headline": "opus5",
       "location": "Hamburg",
-      "position": "Practical in frontend development",
+      "subheadline": "Practical in frontend development",
       "date": "January 2016",
-      "activities": [
+      "description": [
         "Experience in frontend development",
         "Usage of Photoshop and Illustrator"
       ]
@@ -72,16 +72,16 @@
 
   "education": [
     {
-      "name": "Technical University of Munich",
+      "headline": "Technical University of Munich",
       "location": "Munich",
-      "degree": "B.Sc. Informatik",
+      "subheadline": "B.Sc. Informatik",
       "date": "October 2019 – Now",
       "description": "Application subject mathematics"
     },
     {
-      "name": "Gymnasium Klosterschule",
+      "headline": "Gymnasium Klosterschule",
       "location": "Hamburg",
-      "degree": "Abitur",
+      "subheadline": "Abitur",
       "date": "August 2011 – 21. June 2019"
     }
   ]
