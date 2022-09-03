@@ -10,7 +10,7 @@ interface workCardProps {
 }
 
 const WorkCard = (props: workCardProps) => (
-  <div className="my-5 p-5 shadow hover:shadow-md duration-200 rounded-lg cursor-pointer">
+  <div className="my-5 card">
     <h3>
       <span className="font-bold text-xl">{props.name}</span>
     </h3>
@@ -32,7 +32,7 @@ interface educationCardProps {
 }
 
 const EducationCard = (props: educationCardProps) => (
-  <div className="my-5 p-5 shadow hover:shadow-md duration-200 rounded-lg cursor-pointer">
+  <div className="my-5 card">
     <h3>
       <span className="font-bold text-xl">{props.name}</span>
     </h3>
