@@ -3,11 +3,15 @@ import Footer from "./footer";
 import Header from "./header";
 
 const Layout = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(
-    localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-  );
+  let initialThemeIsDark = true;
+
+  if (typeof window !== "undefined") {
+    initialThemeIsDark =
+      localStorage.theme === "dark" ||
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
+
+  const [isDarkMode, setIsDarkMode] = useState(initialThemeIsDark);
 
   useEffect(() => {
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
@@ -29,5 +33,3 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
-
-
