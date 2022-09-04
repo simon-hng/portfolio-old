@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply duration-300 py-1 px-4 rounded-full border-solid border-2 border-slate-500 hover:border-black text-slate-500 hover:text-black hover:fill-black
+    @apply duration-500 py-1 px-4 rounded-full border-solid border-2 border-slate-500 hover:border-black text-slate-500 hover:text-black hover:fill-black
     dark:border-slate-400 dark:text-slate-400 dark:hover:border-white dark:hover:text-white dark:hover:fill-white;
   }
 }
