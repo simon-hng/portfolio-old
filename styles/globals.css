@@ -1,14 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  .card {
-    @apply p-5;
-    @apply shadow-lg;
-    @apply hover:shadow-xl;
-    @apply duration-200;
-    @apply rounded-lg;
-    @apply cursor-pointer;
-  }
-}
