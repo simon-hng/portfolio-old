@@ -3,7 +3,7 @@ import Resume from "../components/resume";
 
 const Link = ({ href, text, color }) => (
   <a
-    className={`duration-500 text-white hover:text-[${color}] font-bold`}
+    className={`duration-500 text-black dark:text-white hover:text-[${color}] font-bold`}
     href={href}
   >
     {text}
