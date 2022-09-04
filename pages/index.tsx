@@ -1,6 +1,15 @@
 import Head from "next/head";
 import Resume from "../components/resume";
 
+const Link = ({ href, text, color }) => (
+  <a
+    className={`duration-500 text-white hover:text-[${color}] font-bold`}
+    href={href}
+  >
+    {text}
+  </a>
+);
+
 const Home = () => {
   return (
     <>
@@ -17,10 +26,15 @@ const Home = () => {
               Hi, I am Simon
             </h1>
 
-            <p className="text-slate-500">
-              Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
+            <p className="text-xl text-slate-500">
+              Studying informatics at{" "}
+              <Link href="https://www.in.tum.de/" text="TUM" color="#0065bd" />,
+              working student at{" "}
+              <Link
+                href="https://www.siemens.com"
+                text="Siemens"
+                color="#00ffb9"
+              />
             </p>
           </div>
 
