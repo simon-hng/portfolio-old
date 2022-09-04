@@ -76,13 +76,14 @@
       "location": "Munich",
       "subheadline": "B.Sc. Informatik",
       "date": ["2019-10-01", "now"],
-      "description": "Application subject mathematics"
+      "description": ["Application subject mathematics"]
     },
     {
       "headline": "Gymnasium Klosterschule",
       "location": "Hamburg",
       "subheadline": "Abitur",
-      "date": ["2011-08-01", "2019-06-21"]
+      "date": ["2011-08-01", "2019-06-21"],
+      "description": ["Secondary education similar to A levels"]
     }
   ]
 }
