@@ -30,7 +30,8 @@ const cvTemplate = json2md([
   cv.education.map((item) => cvItemTemplate(item)),
 ]);
 
-fs.writeFile("pages/cv.md", cvTemplate, (err) => {
+// TODO: our final goal here is to create a pdf using node-pandoc
+fs.writeFile("cv.md", cvTemplate, (err) => {
   if (err) return console.log(err);
-  console.log("Succesfully written to pages/cv.md");
+  console.log("Succesfully written to cv.md");
 });
