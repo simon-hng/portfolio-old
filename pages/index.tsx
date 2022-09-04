@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Resume from "../components/resume";
 
-const Link = ({ href, text, color }) => (
+const Link = ({ href, text, className }) => (
   <a
-    className={`duration-500 text-black dark:text-white hover:text-[${color}] font-bold`}
+    className={"duration-500 font-bold text-black dark:text-white " + className}
     href={href}
   >
     {text}
@@ -28,12 +28,16 @@ const Home = () => {
 
             <p className="text-xl text-slate-500">
               Studying informatics at{" "}
-              <Link href="https://www.in.tum.de/" text="TUM" color="#0065bd" />,
-              working student at{" "}
+              <Link
+                href="https://www.in.tum.de/"
+                text="TUM"
+                className="hover:text-tum-blue dark:hover:text-tum-blue"
+              />
+              , working student at{" "}
               <Link
                 href="https://www.siemens.com"
                 text="Siemens"
-                color="#00ffb9"
+                className="hover:text-siemens-petrol dark:hover:text-siemens-petrol"
               />
             </p>
           </div>
