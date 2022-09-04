@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Card from "../components/card";
-import cv from "./cv.json";
+import cv from "../assets/cv.json";
 
 const Home = () => (
   <div>
