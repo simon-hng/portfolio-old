@@ -1,7 +1,7 @@
 import { useState } from "react";
 import prettyDates from "../util/prettyDates";
 
-interface cardProps {
+export interface cardProps {
   headline: string;
   location: string;
   subheadline: string;

@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { Resume } from "../components/resume";
+import Resume from "../components/resume";
 
 function initialThemeIsDark() {
   let initialThemeIsDark = true;
