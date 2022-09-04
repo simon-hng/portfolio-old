@@ -23,11 +23,11 @@ const Home = () => {
         <div>
           <div className="my-20">
             <h1 className="text-6xl mb-5 text-black dark:text-white">
-              Hi, I am Simon
+              Hi, I&nbsp;am&nbsp;Simon
             </h1>
 
             <p className="text-xl text-slate-500">
-              Studying informatics at{" "}
+              Informatics student at{" "}
               <Link
                 href="https://www.in.tum.de/"
                 text="TUM"
@@ -39,6 +39,7 @@ const Home = () => {
                 text="Siemens"
                 className="hover:text-siemens-petrol dark:hover:text-siemens-petrol"
               />
+              .
             </p>
           </div>
 
