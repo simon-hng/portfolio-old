@@ -19,14 +19,14 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-400 flex justify-center duration-500">
+      <div className="flex justify-center">
         <div>
           <div className="my-20">
             <h1 className="text-6xl mb-5 text-black dark:text-white">
               Hi, I&nbsp;am&nbsp;Simon
             </h1>
 
-            <p className="text-xl text-slate-500">
+            <p className="text-xl">
               Informatics student at{" "}
               <Link
                 href="https://www.in.tum.de/"

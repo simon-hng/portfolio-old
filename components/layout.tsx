@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className={isDarkMode ? "dark" : undefined}>
-      <div className="bg-white text-slate-500 dark:bg-slate-900 dark:text-slate-400 flex justify-center duration-500">
+      <div className="bg-white text-gray-500 dark:bg-gray-900 dark:text-gray-400 flex justify-center duration-500">
         <main className="p-10 max-w-screen-lg">
           <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 

@@ -52,7 +52,7 @@ const Resume = () => {
             </svg>
           </IconButton>
 
-          <ul className="duration-500 w-full border-slate-400 absolute h-0 overflow-hidden opacity-0 group-hover:h-auto group-hover:opacity-100">
+          <ul className="duration-500 w-full border-gray-400 absolute h-0 overflow-hidden opacity-0 group-hover:h-auto group-hover:opacity-100">
             {sortings.map((sort) => (
               <li key={sort}>
                 <IconButton

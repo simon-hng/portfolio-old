@@ -14,8 +14,8 @@ export const IconButton = ({
 }: iconButtonProps) => (
   <button
     onClick={onClick}
-    className={`btn flex justify-between w-full bg-white dark:bg-slate-900
-    fill-slate-500 dark:fill-slate-400 ${className}`}
+    className={`btn flex justify-between w-full bg-white dark:bg-gray-900
+    fill-gray-500 dark:fill-gray-400 ${className}`}
   >
     <p className="pr-1">{text}</p>
     {children}
