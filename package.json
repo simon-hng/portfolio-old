@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "ts-node ./scripts/cv_to_md.ts",
+    "prebuild": "ts-node ./scripts/cv_to_pdf.ts",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -26,6 +26,7 @@
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
     "json2md": "^1.13.0",
+    "node-pandoc": "^0.3.0",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",
     "ts-node": "^10.9.1",

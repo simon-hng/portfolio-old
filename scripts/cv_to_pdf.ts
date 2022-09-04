@@ -1,10 +1,7 @@
 import json2md from "json2md";
+import nodePandoc from "node-pandoc";
 import cv from "../assets/cv.json";
-import fs from "fs";
 import prettyDates from "../util/prettyDates";
-
-// Reads from cv.json and writes to a markdown file in pages,
-// so that the route /cv is available
 
 interface cvItem {
   headline: string;
@@ -22,7 +19,7 @@ const cvItemTemplate = (item: cvItem) => {
   ];
 };
 
-const cvTemplate = json2md([
+const cvMarkdown = json2md([
   { h1: cv.name },
   { h2: "Work experience" },
   cv.work.map((item) => cvItemTemplate(item)),
@@ -30,8 +27,7 @@ const cvTemplate = json2md([
   cv.education.map((item) => cvItemTemplate(item)),
 ]);
 
-// TODO: our final goal here is to create a pdf using node-pandoc
-fs.writeFile("cv.md", cvTemplate, (err) => {
+nodePandoc(cvMarkdown, "-o cv.pdf", (err) => {
   if (err) return console.log(err);
-  console.log("Succesfully written to cv.md");
+  console.log("Succesfully written to cv.pdf");
 });
