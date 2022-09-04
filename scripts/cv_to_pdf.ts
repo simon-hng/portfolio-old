@@ -27,7 +27,18 @@ const cvMarkdown = json2md([
   cv.education.map((item) => cvItemTemplate(item)),
 ]);
 
-nodePandoc(cvMarkdown, "-o public/cv.pdf", (err) => {
+const args = [
+  "-o",
+  "public/cv.pdf",
+  "-V",
+  "linkcolor:blue",
+  "-V",
+  "geometry:a4paper",
+  "-V",
+  "geometry:margin=3cm",
+];
+
+nodePandoc(cvMarkdown, args, (err) => {
   if (err) return console.log(err);
   console.log("Succesfully written to public/cv.pdf");
 });
