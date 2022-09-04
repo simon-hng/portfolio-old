@@ -20,8 +20,8 @@
       "subheadline": "Tutor",
       "date": ["2020-10-01", "2021-10-01"],
       "description": [
-        "Maths preparation",
-        "PGDP - Programming practical",
+        "Maths preparation course",
+        "PGDP - Practical programming course",
         "EIST - Introduction to software engineering",
         "Tutoring and mentoring of students",
         "Grading of exams"
@@ -31,7 +31,7 @@
     {
       "headline": "olli design",
       "location": "Hamburg",
-      "subheadline": "frontend-developer",
+      "subheadline": "frontend developer",
       "date": ["2018-07-01", "2019-07-01"],
       "description": [
         "Creation of corporate websites",
@@ -42,7 +42,7 @@
     {
       "headline": "SinnerSchrader",
       "location": "Hamburg",
-      "subheadline": "Practical in frontend development",
+      "subheadline": "Internship in frontend development",
       "date": ["2018-01-01"],
       "description": [
         " Experience in frontend development",
@@ -61,7 +61,7 @@
     {
       "headline": "opus5",
       "location": "Hamburg",
-      "subheadline": "Practical in frontend development",
+      "subheadline": "Internship in frontend development",
       "date": ["2016-01-01"],
       "description": [
         "Experience in frontend development",
@@ -74,7 +74,7 @@
     {
       "headline": "Technical University of Munich",
       "location": "Munich",
-      "subheadline": "B.Sc. Informatik",
+      "subheadline": "B.Sc. Informatics",
       "date": ["2019-10-01", "now"],
       "description": ["Application subject mathematics"]
     },
