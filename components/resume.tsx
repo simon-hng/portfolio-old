@@ -36,7 +36,7 @@ const Resume = () => {
 
         <div className="relative group">
           <IconButton
-            className="dark:hover:text-red-600 dark:hover:border-red-600 dark:hover:fill-red-600"
+            className="dark:hover:text-red-600 dark:hover:border-red-600 dark:hover:fill-red-600 hover:text-red-800 hover:border-red-800 hover:fill-red-800"
             onClick={() => setSortedBy(undefined)}
             text="sort by"
           >
