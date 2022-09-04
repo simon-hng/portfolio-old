@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "ts-node ./scripts/cv_to_pdf.ts",
+    "cv-to-pdf": "ts-node ./scripts/cv_to_pdf.ts",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
