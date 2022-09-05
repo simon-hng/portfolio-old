@@ -14,7 +14,10 @@ const Card = (props: cardProps) => {
 
   return (
     <div
-      className="my-5 card p-5 border-none dark:border-solid dark:border-2 dark:border-white shadow-md hover:shadow-lg hover:scale-105 duration-200 rounded-lg cursor-pointer"
+      className="my-5 p-5 shadow-md
+      duration-200 rounded-lg cursor-pointer
+      border-2 border-white border-solid
+      hover:shadow-lg hover:scale-105"
       onClick={() => setDescriptionShown(!descriptionShown)}
     >
       <h3>
