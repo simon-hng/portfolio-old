@@ -14,7 +14,7 @@ export const SortMenu = ({
   return (
     <div
       className="relative"
-      onTouchStart={() => setMenuOpen(!menuOpen)}
+      onTouchEnd={() => setMenuOpen(!menuOpen)}
       onMouseOver={() => setMenuOpen(true)}
       onMouseOut={() => setMenuOpen(false)}
     >
