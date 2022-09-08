@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Resume from "../components/resume";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 const Link = ({ href, text, className }) => (
   <a
@@ -11,10 +10,6 @@ const Link = ({ href, text, className }) => (
     {text}
   </a>
 );
-
-interface githubAccount {
-  avatar_url: string;
-}
 
 const Home = () => (
   <>
@@ -26,7 +21,10 @@ const Home = () => (
 
     <div className="flex justify-center">
       <div>
-        <div className="my-20 flex space-x-9">
+        <div
+          className="my-20 flex flex-col space-y-5 items-center 
+            md:flex-row md:space-x-5"
+        >
           <div className="rounded-full overflow-clip w-48 h-48 shrink-0">
             <Image
               src="https://avatars.githubusercontent.com/u/25489463?s=400&u=669e0467028bbd791a9a24e718ee7927c87edaca&v=4"
@@ -37,9 +35,9 @@ const Home = () => (
             />
           </div>
 
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col text-center justify-center md:text-left">
             <h1 className="text-6xl mb-5 text-black dark:text-white">
-              Hi, I&nbsp;am&nbsp;Simon
+              Hello, I&apos;m&nbsp;Simon
             </h1>
 
             <p className="text-xl">
