@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+
 interface headerProps {
   isDarkMode: boolean;
   setIsDarkMode: (isDarkMode: boolean) => void;
@@ -5,8 +9,12 @@ interface headerProps {
 
 const Header = ({ setIsDarkMode, isDarkMode }: headerProps) => (
   <header className="flex flex-row-reverse space-x-2 space-x-reverse">
-    <button className="btn" onClick={() => setIsDarkMode(!isDarkMode)}>
-      theme
+    <button className="btn w-14" onClick={() => setIsDarkMode(!isDarkMode)}>
+      {isDarkMode ? (
+        <FontAwesomeIcon icon={faSun} className="h-5" />
+      ) : (
+        <FontAwesomeIcon icon={faMoon} className="h-5" />
+      )}
     </button>
 
     <a
@@ -15,14 +23,11 @@ const Header = ({ setIsDarkMode, isDarkMode }: headerProps) => (
       rel="noreferrer"
       target="_blank"
     >
-      github
+      <FontAwesomeIcon icon={faGithubAlt} className="h-5" />
     </a>
 
-    <a
-      className="btn"
-      href="mailto:simon.huang@tum.de"
-    >
-      mail
+    <a className="btn" href="mailto:simon.huang@tum.de">
+      <FontAwesomeIcon icon={faEnvelope} className="h-5" />
     </a>
   </header>
 );
