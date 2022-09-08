@@ -15,8 +15,25 @@ export const SortMenu = ({
 }: sortMenuProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: Event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref, setMenuOpen]);
+
   return (
     <div
+      ref={ref}
       className="relative"
       onMouseOver={() => setMenuOpen(true)}
       onMouseOut={() => setMenuOpen(false)}
@@ -67,28 +84,11 @@ const SortMenuButton = ({
     setMenuOpen(false);
   };
 
-  const buttonRef = useRef(null);
-
-  useEffect(() => {
-    const handleClickOutside = (event: Event) => {
-      if (buttonRef.current && !buttonRef.current.contains(event.target)) {
-        setMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [buttonRef, setMenuOpen]);
-
   const redButton = `dark:text-red-600 dark:border-red-600 dark:fill-red-600 
                     text-red-800 border-red-800 fill-red-800`;
 
   return (
     <IconButton
-      ref={buttonRef}
       className={menuOpen && redButton}
       onClick={onClick}
       text={menuOpen ? "no sort" : "sort by"}
