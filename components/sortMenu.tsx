@@ -1,5 +1,4 @@
-import { useState } from "react";
-import * as React from "react";
+import { useEffect, useRef, useState } from "react";
 import { IconButton } from "./iconButton";
 import {
   sortMenuProps,
@@ -62,19 +61,34 @@ const SortMenuButton = ({
   setMenuOpen,
 }: sortMenuButtonProps) => {
   const onClick = () => {
-    console.log("on");
     if (!menuOpen) return setMenuOpen(true);
 
-    console.log("off");
     setSortedBy(undefined);
     setMenuOpen(false);
   };
+
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: Event) => {
+      if (buttonRef.current && !buttonRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [buttonRef, setMenuOpen]);
 
   const redButton = `dark:text-red-600 dark:border-red-600 dark:fill-red-600 
                     text-red-800 border-red-800 fill-red-800`;
 
   return (
     <IconButton
+      ref={buttonRef}
       className={menuOpen && redButton}
       onClick={onClick}
       text={menuOpen ? "no sort" : "sort by"}

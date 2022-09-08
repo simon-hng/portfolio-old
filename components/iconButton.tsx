@@ -6,18 +6,16 @@ interface iconButtonProps {
   children: React.ReactElement;
   className?: string;
 }
-export const IconButton = ({
-  onClick,
-  text,
-  children,
-  className,
-}: iconButtonProps) => (
+
+// eslint-disable-next-line react/display-name
+export const IconButton = React.forwardRef((props: iconButtonProps, ref) => (
   <button
-    onClick={onClick}
+    ref={ref as React.RefObject<any>}
+    onClick={props.onClick}
     className={`btn flex justify-between w-full bg-white dark:bg-gray-900
-    fill-gray-500 dark:fill-gray-400 ${className}`}
+    fill-gray-500 dark:fill-gray-400 ${props.className}`}
   >
-    <p className="pr-1">{text}</p>
-    {children}
+    <p className="pr-1">{props.text}</p>
+    {props.children}
   </button>
-);
+));
