@@ -8,7 +8,7 @@ interface headerProps {
 }
 
 const Header = ({ setIsDarkMode, isDarkMode }: headerProps) => (
-  <header className="flex flex-row-reverse space-x-2 space-x-reverse">
+  <header className="py-10 flex flex-row-reverse space-x-2 space-x-reverse">
     <button className="btn w-14" onClick={() => setIsDarkMode(!isDarkMode)}>
       {isDarkMode ? (
         <FontAwesomeIcon icon={faSun} className="h-5" />
