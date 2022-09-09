@@ -14,7 +14,10 @@ const Card = (props: cardProps) => {
 
   return (
     <div
-      className="card"
+      className="my-5 p-5 shadow-md
+        duration-200 cursor-pointer
+        rounded-lg border-solid border-2 border-white
+        hover:shadow-lg hover:scale-105"
       onClick={() => setDescriptionShown(!descriptionShown)}
     >
       <h3>
@@ -31,9 +34,8 @@ const Card = (props: cardProps) => {
 
       {descriptionShown && (
         <ul className="mt-2 list-disc list-inside">
-          {props.description.map((desc) => (
-            // eslint-disable-next-line react/jsx-key
-            <li>{desc}</li>
+          {props.description.map((desc, index) => (
+            <li key={index}>{desc}</li>
           ))}
         </ul>
       )}

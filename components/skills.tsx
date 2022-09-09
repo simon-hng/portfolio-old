@@ -29,13 +29,17 @@ const IconList = ({ icons, title }: iconListProps) => {
         {icons.map((skill: string) => (
           <div
             key={skill}
-            className="duration-500 w-20 mr-5 mb-5 relative group flex flex-col items-center"
+            className="duration-500 w-22 mr-5 mb-7 relative group"
           >
             <i
-              className={`devicon-${skill.toLowerCase()}-plain text-6xl duration-500 group-hover:text-black dark:group-hover:text-white`}
+              className={`devicon-${skill.toLowerCase()}-plain 
+              text-6xl duration-500
+              group-hover:text-black dark:group-hover:text-white
+              group-active:text-black dark:group-active:text-white
+              `}
             />
-            <div className="duration-500 overflow-hidden opacity-0 group-hover:opacity-100">
-              <p className="text-black dark:text-white">{skill}</p>
+            <div className="absolute left-0 right-0 mx-auto min-w-min duration-500 opacity-0 group-hover:opacity-100 group-active:opacity-100">
+              <p className="text-center text-black dark:text-white">{skill}</p>
             </div>
           </div>
         ))}

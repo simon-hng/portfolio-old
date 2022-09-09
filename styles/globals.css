@@ -11,19 +11,8 @@
     items-center content-center;
   }
 
-  .btn:hover,
-  .btn:active {
+  .btn:hover {
     @apply border-black text-black fill-black
     dark:border-white dark:text-white dark:fill-white;
-  }
-
-  .card {
-    @apply my-5 p-5 shadow-md
-    duration-200 cursor-pointer
-    rounded-lg border-solid border-2 border-white;
-  }
-
-  .card:hover {
-    @apply shadow-lg scale-105;
   }
 }
