@@ -3,7 +3,7 @@ import { faHeart, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => (
   <footer>
-    <hr />
+    <hr className="border-text mt-20"/>
     <div className="py-10 flex justify-between">
       <p>
         made with <FontAwesomeIcon icon={faHeart} className="inline h-4" /> in
