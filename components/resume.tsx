@@ -19,7 +19,7 @@ const Resume = () => {
   const sortMenuProps = { sortedBy, setSortedBy, sortAsc, setSortAsc };
 
   return (
-    <div>
+    <section>
       <div className="flex justify-between">
         <h2 className="font-bold text-3xl text-black dark:text-white">
           Resume
@@ -29,7 +29,7 @@ const Resume = () => {
       </div>
 
       <ResumeList sortDesc={sortAsc} sortedBy={sortedBy} />
-    </div>
+    </section>
   );
 };
 

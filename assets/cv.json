@@ -7,10 +7,10 @@
       "subheadline": "Working student",
       "date": ["2021-11-01", "now"],
       "description": [
-        "Redesign of a frontend as a modern SPO with react",
+        "Redesign and engineering of a frontend",
         "CI/CD using GitLab CI/CD",
-        "Implementation of new features in Spring-boot",
-        "Kibana/OpenSearch – monitoring and data analysis"
+        "Implementing new features in a tool",
+        "OpenSearch – monitoring and data analysis"
       ]
     },
 
@@ -35,7 +35,8 @@
       "date": ["2018-07-01", "2019-07-01"],
       "description": [
         "Creation of corporate websites",
-        "Usage of CMS like Typo3"
+        "Usage of CMS like Typo3",
+        "Creation of Typo3 templates"
       ]
     },
 
@@ -45,8 +46,9 @@
       "subheadline": "Internship in frontend development",
       "date": ["2018-01-01"],
       "description": [
-        " Experience in frontend development",
-        " Usage of NodeJS, NPM, Gulp, Grunt, etc."
+        "Experience in frontend development",
+        "Industry best practices",
+        "Usage of NodeJS, NPM, Gulp, Grunt, etc."
       ]
     },
 
@@ -76,7 +78,10 @@
       "location": "Munich",
       "subheadline": "B.Sc. Informatics",
       "date": ["2019-10-01", "now"],
-      "description": ["Application subject mathematics"]
+      "description": [
+        "Application subject mathematics",
+        "Expected thesis in applied software engineering"
+      ]
     },
     {
       "headline": "Gymnasium Klosterschule",
@@ -85,5 +90,40 @@
       "date": ["2011-08-01", "2019-06-21"],
       "description": ["Secondary education similar to A levels"]
     }
-  ]
+  ],
+  "skills": {
+    "languages": [
+      "Rust",
+      "TypeScript",
+      "Kotlin",
+      "Python",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lua",
+      "C",
+      "Julia",
+      "Latex",
+      "R"
+    ],
+    "frameworks": ["React", "Angularjs", "Svelte", "TYPO3"],
+    "tools": [
+      "Linux",
+      "Vim",
+      "Firefox",
+      "Figma",
+      "VSCode",
+      "Intellij",
+      "Illustrator",
+      "Photoshop"
+    ],
+    "likes": [
+      "clean code",
+      "refactoring",
+      "testing",
+      "functional programming",
+      "linux",
+      "neovim"
+    ]
+  }
 }

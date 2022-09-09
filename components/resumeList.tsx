@@ -1,6 +1,5 @@
 import Card, { cardProps } from "../components/card";
 import cv from "../assets/cv.json";
-import * as React from "react";
 import { sortingsType } from "./resume";
 
 export const ResumeList = ({ sortedBy, sortDesc: sortAsc }) => {

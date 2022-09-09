@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Resume from "../components/resume";
 import Image from "next/image";
+import Skills from "../components/skills";
 
 const Link = ({ href, text, className }) => (
   <a
@@ -59,6 +60,8 @@ const Home = () => (
         </div>
 
         <Resume />
+
+        <Skills />
       </div>
     </div>
   </>
