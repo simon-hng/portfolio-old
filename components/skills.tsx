@@ -8,6 +8,8 @@ const Skills = ({}: skillsProps) => (
     <IconList title="Languages" icons={cv.skills.languages} />
 
     <IconList title="Frameworks" icons={cv.skills.frameworks} />
+
+    <IconList title="Tools" icons={cv.skills.tools} />
   </section>
 );
 
