@@ -4,8 +4,26 @@
 
 @layer components {
   .btn {
-    @apply flex duration-500 py-1 px-4 rounded-full border-solid border-2 border-gray-500 hover:border-black text-gray-500 hover:text-black hover:fill-black
-    dark:border-gray-400 dark:text-gray-400 dark:hover:border-white dark:hover:text-white dark:hover:fill-white
+    @apply flex duration-500 py-2 px-4 
+    rounded-full border-solid border-2 
+    border-gray-500 text-gray-500 
+    dark:border-gray-400 dark:text-gray-400 
     items-center content-center;
+  }
+
+  .btn:hover,
+  .btn:active {
+    @apply border-black text-black fill-black
+    dark:border-white dark:text-white dark:fill-white;
+  }
+
+  .card {
+    @apply my-5 p-5 shadow-md
+    duration-200 cursor-pointer
+    rounded-lg border-solid border-2 border-white;
+  }
+
+  .card:hover {
+    @apply shadow-lg scale-105;
   }
 }
