@@ -21,7 +21,7 @@ const Resume = () => {
   return (
     <section>
       <div className="flex justify-between">
-        <h2 className="font-bold text-3xl text-black dark:text-white">
+        <h2 className="font-bold text-3xl text-text">
           Resume
         </h2>
 

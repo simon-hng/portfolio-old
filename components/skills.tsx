@@ -3,7 +3,7 @@ interface skillsProps {}
 
 const Skills = ({}: skillsProps) => (
   <section className="mt-20">
-    <h2 className="font-bold text-3xl text-black dark:text-white">Skills</h2>
+    <h2 className="font-bold text-3xl text-text">Skills</h2>
 
     <IconList title="Languages" icons={cv.skills.languages} />
 
@@ -23,7 +23,7 @@ interface iconListProps {
 const IconList = ({ icons, title }: iconListProps) => {
   return (
     <div className="mt-2">
-      <h2 className="font-bold text-xl text-black dark:text-white">{title}</h2>
+      <h2 className="font-bold text-xl text-text">{title}</h2>
 
       <div className="flex flex-wrap mt-5">
         {icons.map((skill: string) => (
@@ -34,12 +34,11 @@ const IconList = ({ icons, title }: iconListProps) => {
             <i
               className={`devicon-${skill.toLowerCase()}-plain 
               text-6xl duration-500
-              group-hover:text-black dark:group-hover:text-white
-              group-active:text-black dark:group-active:text-white
+              group-hover:text-rosewater group-active:text-rosewater
               `}
             />
             <div className="absolute left-0 right-0 mx-auto min-w-min duration-500 opacity-0 group-hover:opacity-100 group-active:opacity-100">
-              <p className="text-center text-black dark:text-white">{skill}</p>
+              <p className="text-center text-rosewater">{skill}</p>
             </div>
           </div>
         ))}

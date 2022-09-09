@@ -4,10 +4,7 @@ import Image from "next/image";
 import Skills from "../components/skills";
 
 const Link = ({ href, text, className }) => (
-  <a
-    className={"duration-500 font-bold text-black dark:text-white " + className}
-    href={href}
-  >
+  <a className={"duration-500 font-bold text-text " + className} href={href}>
     {text}
   </a>
 );
@@ -37,7 +34,7 @@ const Home = () => (
           </div>
 
           <div className="flex flex-col text-center justify-center md:text-left">
-            <h1 className="text-6xl mb-5 text-black dark:text-white">
+            <h1 className="text-6xl mb-5 text-text">
               Hello, I&apos;m&nbsp;Simon
             </h1>
 
@@ -46,13 +43,13 @@ const Home = () => (
               <Link
                 href="https://www.in.tum.de/"
                 text="TUM"
-                className="hover:text-tum-blue dark:hover:text-tum-blue"
+                className="hover:text-tum-blue"
               />
               , working student at{" "}
               <Link
                 href="https://www.siemens.com"
                 text="Siemens"
-                className="hover:text-siemens-petrol dark:hover:text-siemens-petrol"
+                className="hover:text-siemens-petrol"
               />
               .
             </p>

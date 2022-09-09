@@ -13,7 +13,7 @@ const Footer = () => (
         href="https://github.com/simon-hng/portfolio/"
         target="_blank"
         rel="noreferrer"
-        className="duration-500 hover:text-black dark:hover:text-white"
+        className="duration-500 hover:text-rosewater"
       >
         source <FontAwesomeIcon icon={faCode} className="inline h-4" />
       </a>

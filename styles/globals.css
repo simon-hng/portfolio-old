@@ -6,13 +6,11 @@
   .btn {
     @apply flex duration-500 py-2 px-4 
     rounded-full border-solid border-2 
-    border-gray-500 text-gray-500 
-    dark:border-gray-400 dark:text-gray-400 
+    border-subtext0 text-subtext0
     items-center content-center;
   }
 
   .btn:hover {
-    @apply border-black text-black fill-black
-    dark:border-white dark:text-white dark:fill-white;
+    @apply border-rosewater text-rosewater fill-rosewater;
   }
 }

@@ -46,7 +46,7 @@ export const SortMenu = ({
       />
 
       {menuOpen && (
-        <ul className="duration-500 w-full border-gray-400 absolute">
+        <ul className="duration-500 w-full absolute">
           {sortings.map((sort) => (
             <li key={sort}>
               <IconButton
@@ -90,8 +90,7 @@ const SortMenuButton = ({
     setMenuOpen(false);
   };
 
-  const redButton = `dark:text-red-600 dark:border-red-600 dark:fill-red-600 
-                    text-red-800 border-red-800 fill-red-800`;
+  const redButton = `text-red border-red fill-red`;
 
   return (
     <IconButton

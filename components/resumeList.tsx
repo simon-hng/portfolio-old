@@ -18,7 +18,7 @@ export const ResumeList = ({ sortedBy, sortDesc: sortAsc }) => {
 
   return (
     <div className="mt-2">
-      <h2 className="font-bold text-xl text-black dark:text-white">
+      <h2 className="font-bold text-xl text-text">
         Sorted by {sortedBy} {sortAsc ? "ascending" : "descending"}
       </h2>
 
@@ -32,9 +32,7 @@ export const ResumeList = ({ sortedBy, sortDesc: sortAsc }) => {
 export const Unsorted = () => (
   <>
     <div className="mt-2">
-      <h2 className="font-bold text-xl text-black dark:text-white">
-        Working experience
-      </h2>
+      <h2 className="font-bold text-xl text-text">Working experience</h2>
 
       {cv.work.map((item) => (
         <Card key={item.headline} {...item} />
@@ -42,9 +40,7 @@ export const Unsorted = () => (
     </div>
 
     <div className="mt-10">
-      <h2 className="font-bold text-xl text-black dark:text-white">
-        Education
-      </h2>
+      <h2 className="font-bold text-xl text-text">Education</h2>
       {cv.education.map((item) => (
         <Card key={item.headline} {...item} />
       ))}
