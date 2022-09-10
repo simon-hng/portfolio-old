@@ -16,10 +16,7 @@ const Card = (props: cardProps) => (
         hover:shadow-lg hover:scale-105
     "
   >
-    <summary
-      className="duration-300 block p-5 rounded-lg 
-      focus:outline-blue focus:outline-2 focus:outline"
-    >
+    <summary className="duration-300 block p-5 rounded-lg">
       <h3>
         <span className="font-bold text-xl text-text">{props.headline}</span>
       </h3>
