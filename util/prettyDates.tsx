@@ -1,25 +1,12 @@
 const prettyDate = (dateString: string) => {
-  //TODO localization
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-
   if (dateString === "now") return "now";
 
-  const date = new Date(dateString);
+  const dateTimeFormat = new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    year: "numeric",
+  });
 
-  return `${months[date.getMonth()]} ${date.getFullYear()}`;
+  return dateTimeFormat.format(new Date(dateString));
 };
 
 const prettyDates = (dates: string[]) => {
