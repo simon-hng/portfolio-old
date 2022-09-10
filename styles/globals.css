@@ -13,4 +13,8 @@
   .btn:hover {
     @apply border-rosewater text-rosewater fill-rosewater;
   }
+
+  .btn:focus {
+    @apply outline-none border-2 border-blue text-blue fill-blue;
+  }
 }
