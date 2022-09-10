@@ -1,4 +1,3 @@
-import { useState } from "react";
 import prettyDates from "../util/prettyDates";
 
 export interface cardProps {
@@ -9,21 +8,16 @@ export interface cardProps {
   description: string[];
 }
 
-const Card = (props: cardProps) => {
-  const [descriptionShown, setDescriptionShown] = useState(false);
-
-  return (
-    <div
-      className="my-5 p-5 shadow-md
+const Card = (props: cardProps) => (
+  <details
+    className="my-5 shadow-md
         duration-500 cursor-pointer rounded-lg 
         bg-base dark:bg-mantle
         hover:shadow-lg hover:scale-105"
-      onClick={() => setDescriptionShown(!descriptionShown)}
-    >
+  >
+    <summary className="block p-5">
       <h3>
-        <span className="font-bold text-xl text-text">
-          {props.headline}
-        </span>
+        <span className="font-bold text-xl text-text">{props.headline}</span>
       </h3>
 
       <p className="text-sm">{props.subheadline}</p>
@@ -31,16 +25,14 @@ const Card = (props: cardProps) => {
       <p>
         {props.location}, {prettyDates(props.date)}
       </p>
+    </summary>
 
-      {descriptionShown && (
-        <ul className="mt-2 list-disc list-inside">
-          {props.description.map((desc, index) => (
-            <li key={index}>{desc}</li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-};
+    <ul className="p-5 pt-0 list-disc list-inside">
+      {props.description.map((desc, index) => (
+        <li key={index}>{desc}</li>
+      ))}
+    </ul>
+  </details>
+);
 
 export default Card;
