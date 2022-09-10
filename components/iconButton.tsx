@@ -7,7 +7,7 @@ interface iconButtonProps {
   className?: string;
 }
 
-export const IconButton = (props: iconButtonProps) => (
+const IconButton = (props: iconButtonProps) => (
   <button
     onClick={props.onClick}
     className={`btn justify-between space-x-2 w-full bg-base ${props.className}`}
@@ -16,3 +16,5 @@ export const IconButton = (props: iconButtonProps) => (
     {props.children}
   </button>
 );
+
+export default IconButton;

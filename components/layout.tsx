@@ -2,7 +2,11 @@ import { useEffect, useState } from "react";
 import Footer from "./footer";
 import Header from "./header";
 
-const Layout = ({ children }) => {
+interface layoutProps {
+  children: React.ReactElement;
+}
+
+const Layout = ({ children }: layoutProps) => {
   let initialThemeIsDark = true;
 
   if (typeof window !== "undefined") {

@@ -2,7 +2,12 @@ import Card, { cardProps } from "../components/card";
 import cv from "../assets/cv.json";
 import { sortingsType } from "./resume";
 
-export const ResumeList = ({ sortedBy, sortDesc: sortAsc }) => {
+interface resumeListProps {
+  sortedBy: sortingsType;
+  sortAsc: boolean;
+}
+
+const ResumeList = ({ sortedBy, sortAsc }: resumeListProps) => {
   if (!sortedBy) return <Unsorted />;
 
   const comparators: {
@@ -29,7 +34,7 @@ export const ResumeList = ({ sortedBy, sortDesc: sortAsc }) => {
   );
 };
 
-export const Unsorted = () => (
+const Unsorted = () => (
   <>
     <div className="mt-2">
       <h2 className="font-bold text-xl text-text">Working experience</h2>
@@ -47,3 +52,5 @@ export const Unsorted = () => (
     </div>
   </>
 );
+
+export default ResumeList;

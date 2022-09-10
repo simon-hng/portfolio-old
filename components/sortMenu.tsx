@@ -1,14 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faXmark,
-  faBars,
-  faArrowDown,
-} from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
-import { IconButton } from "./iconButton";
-import { sortMenuProps, sortings, sortingsType } from "./resume";
+import { sortings, sortingsType } from "./resume";
+import IconButton from "./iconButton";
+import SortMenuButton from "./sortMenuButton";
 
-export const SortMenu = ({
+export interface sortMenuProps {
+  sortedBy: sortingsType;
+  setSortedBy: (sortedBy: sortingsType) => void;
+  sortAsc: boolean;
+  setSortAsc: (sortAsc: boolean) => void;
+}
+
+const SortMenu = ({
   sortedBy,
   setSortedBy,
   sortAsc,
@@ -72,37 +76,4 @@ export const SortMenu = ({
   );
 };
 
-interface sortMenuButtonProps {
-  menuOpen: boolean;
-  setMenuOpen: (menuOpen: boolean) => void;
-  setSortedBy: (sortedBy: sortingsType) => void;
-}
-
-const SortMenuButton = ({
-  menuOpen,
-  setSortedBy,
-  setMenuOpen,
-}: sortMenuButtonProps) => {
-  const onClick = () => {
-    if (!menuOpen) return setMenuOpen(true);
-
-    setSortedBy(undefined);
-    setMenuOpen(false);
-  };
-
-  const redButton = `text-red border-red fill-red`;
-
-  return (
-    <IconButton
-      className={menuOpen && redButton}
-      onClick={onClick}
-      text={menuOpen ? "no sort" : "sort by"}
-    >
-      {menuOpen ? (
-        <FontAwesomeIcon icon={faXmark} className="w-4 h-6" />
-      ) : (
-        <FontAwesomeIcon icon={faBars} className="w-4" />
-      )}
-    </IconButton>
-  );
-};
+export default SortMenu;
