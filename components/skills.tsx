@@ -1,7 +1,6 @@
 import cv from "../assets/cv.json";
-interface skillsProps {}
 
-const Skills = ({}: skillsProps) => (
+const Skills = () => (
   <section className="mt-20">
     <h2 className="font-bold text-3xl text-text">Skills</h2>
 
@@ -13,8 +12,6 @@ const Skills = ({}: skillsProps) => (
   </section>
 );
 
-export default Skills;
-
 interface iconListProps {
   icons: string[];
   title: string;
@@ -22,7 +19,7 @@ interface iconListProps {
 
 const IconList = ({ icons, title }: iconListProps) => {
   return (
-    <div className="mt-2">
+    <article className="mt-2">
       <h2 className="font-bold text-xl text-text">{title}</h2>
 
       <div className="flex flex-wrap mt-5">
@@ -33,16 +30,16 @@ const IconList = ({ icons, title }: iconListProps) => {
           >
             <i
               className={`devicon-${skill.toLowerCase()}-plain 
-              text-6xl duration-500
-              group-hover:text-rosewater group-active:text-rosewater
-              `}
+              text-6xl duration-500 group-hover:text-teal`}
             />
             <div className="absolute left-0 right-0 mx-auto min-w-min duration-500 opacity-0 group-hover:opacity-100 group-active:opacity-100">
-              <p className="text-center text-rosewater">{skill}</p>
+              <p className="text-center text-teal">{skill}</p>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </article>
   );
 };
+
+export default Skills;

@@ -3,7 +3,7 @@ import { faHeart, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => (
   <footer>
-    <hr className="border-text mt-20"/>
+    <hr className="border-text mt-20" />
     <div className="py-10 flex justify-between">
       <p>
         made with <FontAwesomeIcon icon={faHeart} className="inline h-4" /> in
@@ -13,7 +13,7 @@ const Footer = () => (
         href="https://github.com/simon-hng/portfolio/"
         target="_blank"
         rel="noreferrer"
-        className="duration-500 hover:text-rosewater"
+        className="duration-500 hover:text-blue underline"
       >
         source <FontAwesomeIcon icon={faCode} className="inline h-4" />
       </a>
