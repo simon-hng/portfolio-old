@@ -1,6 +1,11 @@
-module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}
+const withCss = require("@zeit/next-css");
+const withPurgeCss = require("next-purgecss");
+
+module.exports = withCss(
+  withPurgeCss({
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  })
+);
