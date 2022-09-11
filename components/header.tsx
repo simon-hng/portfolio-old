@@ -9,7 +9,11 @@ interface headerProps {
 
 const Header = ({ setIsDarkMode, isDarkMode }: headerProps) => (
   <header className="py-10 flex flex-row-reverse space-x-2 space-x-reverse">
-    <button className="btn w-14" onClick={() => setIsDarkMode(!isDarkMode)}>
+    <button
+      aria-label="toggle theme"
+      className="btn w-14"
+      onClick={() => setIsDarkMode(!isDarkMode)}
+    >
       {isDarkMode ? (
         <FontAwesomeIcon icon={faSun} className="h-5" />
       ) : (
@@ -19,6 +23,7 @@ const Header = ({ setIsDarkMode, isDarkMode }: headerProps) => (
 
     <a
       className="btn"
+      aria-label="github account"
       href="https://www.github.com/simon-hng/"
       rel="noreferrer"
       target="_blank"
@@ -26,7 +31,7 @@ const Header = ({ setIsDarkMode, isDarkMode }: headerProps) => (
       <FontAwesomeIcon icon={faGithubAlt} className="h-5" />
     </a>
 
-    <a className="btn" href="mailto:simon.huang@tum.de">
+    <a className="btn" aria-label="email" href="mailto:simon.huang@tum.de">
       <FontAwesomeIcon icon={faEnvelope} className="h-5" />
     </a>
   </header>
