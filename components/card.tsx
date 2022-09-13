@@ -6,6 +6,7 @@ export interface cardProps {
   subheadline: string;
   date: string[];
   description: string[];
+  category?: string;
 }
 
 const Card = (props: cardProps) => (
