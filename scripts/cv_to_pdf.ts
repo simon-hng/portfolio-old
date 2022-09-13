@@ -22,9 +22,13 @@ const cvItemTemplate = (item: cvItem) => {
 const cvMarkdown = json2md([
   { h1: cv.name },
   { h2: "Work experience" },
-  cv.work.map((item) => cvItemTemplate(item)),
+  cv.resume
+    .filter((item) => item.category === "work")
+    .map((item) => cvItemTemplate(item)),
   { h2: "Education" },
-  cv.education.map((item) => cvItemTemplate(item)),
+  cv.resume
+    .filter((item) => item.category === "education")
+    .map((item) => cvItemTemplate(item)),
 ]);
 
 const args = [
