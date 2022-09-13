@@ -39,7 +39,7 @@ const SortMenu = ({
   return (
     <div
       ref={ref}
-      className="relative"
+      className="relative z-10"
       onMouseOver={() => setMenuOpen(true)}
       onMouseOut={() => setMenuOpen(false)}
     >
@@ -49,29 +49,32 @@ const SortMenu = ({
         setSortedBy={setSortedBy}
       />
 
-      {menuOpen && (
-        <ul className="duration-500 w-full absolute">
-          {sortings.map((sort) => (
-            <li key={sort}>
-              <IconButton
-                className="my-1"
-                onClick={() => {
-                  if (sortedBy === sort) setSortAsc(!sortAsc);
-                  setSortedBy(sort);
-                }}
-                text={sort}
-              >
-                {sortedBy === sort && (
-                  <FontAwesomeIcon
-                    icon={faArrowDown}
-                    className={`${sortAsc && "rotate-180"} duration-300 w-4`}
-                  />
-                )}
-              </IconButton>
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul
+        key="sortMenuOptions"
+        className={`duration-500 w-full absolute opacity-0 overflow-hidden h-0 ${
+          menuOpen && "opacity-100 h-auto"
+        }`}
+      >
+        {sortings.map((sort) => (
+          <li key={sort}>
+            <IconButton
+              className="my-1"
+              onClick={() => {
+                if (sortedBy === sort) setSortAsc(!sortAsc);
+                setSortedBy(sort);
+              }}
+              text={sort}
+            >
+              {sortedBy === sort && (
+                <FontAwesomeIcon
+                  icon={faArrowDown}
+                  className={`${sortAsc && "rotate-180"} duration-300 w-4`}
+                />
+              )}
+            </IconButton>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
