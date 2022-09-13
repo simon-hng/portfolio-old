@@ -1,14 +1,14 @@
-import cv from "../assets/cv.json";
+import skills from "../assets/skills.json";
 
 const Skills = () => (
   <section className="mt-20">
     <h2 className="font-bold text-3xl text-text">Skills</h2>
 
-    <IconList title="Languages" icons={cv.skills.languages} />
+    <IconList title="Languages" icons={skills.languages} />
 
-    <IconList title="Frameworks" icons={cv.skills.frameworks} />
+    <IconList title="Frameworks" icons={skills.frameworks} />
 
-    <IconList title="Tools" icons={cv.skills.tools} />
+    <IconList title="Tools" icons={skills.tools} />
   </section>
 );
 

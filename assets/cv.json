@@ -96,37 +96,4 @@
       "category": "education"
     }
   ],
-  "skills": {
-    "languages": [
-      "Rust",
-      "TypeScript",
-      "Kotlin",
-      "Python",
-      "Haskell",
-      "Java",
-      "Lua",
-      "C",
-      "Latex",
-      "R"
-    ],
-    "frameworks": ["React", "Angularjs", "Svelte", "TYPO3"],
-    "tools": [
-      "Linux",
-      "Vim",
-      "Firefox",
-      "Figma",
-      "VSCode",
-      "Intellij",
-      "Illustrator",
-      "Photoshop"
-    ],
-    "likes": [
-      "clean code",
-      "refactoring",
-      "testing",
-      "functional programming",
-      "linux",
-      "neovim"
-    ]
-  }
 }
