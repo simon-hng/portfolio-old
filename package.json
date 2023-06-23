@@ -24,7 +24,7 @@
     "tslib": "2.4.0"
   },
   "devDependencies": {
-    "@catppuccin/tailwindcss": "0.1.0",
+    "@catppuccin/tailwindcss": "0.1.6",
     "@next/mdx": "12.2.5",
     "@tailwindcss/typography": "0.5.7",
     "@types/json2md": "1.5.1",
