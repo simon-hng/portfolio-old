@@ -1,15 +1,21 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useRef, useState } from "react";
+import {
+  type Dispatch,
+  type SetStateAction,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { sortings, type sortingsType } from "./resume";
 import IconButton from "./iconButton";
 import SortMenuButton from "./sortMenuButton";
 
 export interface sortMenuProps {
   sortedBy: sortingsType;
-  setSortedBy: (sortedBy: sortingsType) => void;
+  setSortedBy: Dispatch<SetStateAction<sortingsType>>;
   sortAsc: boolean;
-  setSortAsc: (sortAsc: boolean) => void;
+  setSortAsc: Dispatch<SetStateAction<boolean>>;
 }
 
 const SortMenu = ({
@@ -20,11 +26,11 @@ const SortMenu = ({
 }: sortMenuProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: Event) => {
-      if (ref.current && !ref.current.contains(event.target)) {
+      if (ref.current && !ref.current.contains(event.target as Node)) {
         setMenuOpen(false);
       }
     };

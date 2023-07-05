@@ -1,11 +1,14 @@
 import { cx } from "class-variance-authority";
 import Image from "next/image";
 
-const Link = ({ href, text, className }) => (
-  <a
-    className={cx("font-bold text-text duration-500 " + className)}
-    href={href}
-  >
+interface LinkProps {
+  href: string;
+  text: string;
+  className?: string;
+}
+
+const Link = ({ href, text, className }: LinkProps) => (
+  <a className={cx("font-bold text-text duration-500", className)} href={href}>
     {text}
   </a>
 );
