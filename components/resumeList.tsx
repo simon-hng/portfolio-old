@@ -34,6 +34,15 @@ const ResumeList = ({ sortedBy, sortAsc }: resumeListProps) => {
         0,
         "Education"
       );
+
+      sortedItems.splice(
+        sortedItems.findIndex(
+          (item) =>
+            typeof item !== "string" && item.category === "extracurricular"
+        ),
+        0,
+        "Extracurricular Activities"
+      );
     } else {
       sortedItems.sort(comparators[sortedBy]);
       if (sortAsc) sortedItems.reverse();
