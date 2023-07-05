@@ -1,6 +1,6 @@
-import Card, { cardProps } from "../components/card";
+import Card, { type cardProps } from "../components/card";
 import cv from "../assets/cv.json";
-import { sortingsType } from "./resume";
+import { type sortingsType } from "./resume";
 import { LayoutGroup, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -22,7 +22,7 @@ const ResumeList = ({ sortedBy, sortAsc }: resumeListProps) => {
   const [items, setItems] = useState<resumeItem[]>(cv.resume);
 
   useEffect(() => {
-    let sortedItems: resumeItem[] = [...cv.resume];
+    const sortedItems: resumeItem[] = [...cv.resume];
 
     if (!sortedBy) {
       sortedItems.unshift("Working experience");
@@ -61,15 +61,17 @@ const ResumeList = ({ sortedBy, sortAsc }: resumeListProps) => {
     <div className="mt-2">
       <LayoutGroup>
         {items.map((item) => {
-          return typeof item === "string" ? (
+          if (typeof item === "string") {
+          return (
             <motion.div layout key={item}>
               <h2 className="font-bold text-xl text-text">{item}</h2>
-            </motion.div>
-          ) : (
-            <motion.div layout key={item + item.headline + item.subheadline}>
+            </motion.div>)
+          }
+          return (
+            <motion.div layout key={`${item.headline}-${item.subheadline}`}>
               <Card {...item} />
             </motion.div>
-          );
+          )
         })}
       </LayoutGroup>
     </div>

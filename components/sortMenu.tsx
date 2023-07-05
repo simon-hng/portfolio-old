@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
-import { sortings, sortingsType } from "./resume";
+import { sortings, type sortingsType } from "./resume";
 import IconButton from "./iconButton";
 import SortMenuButton from "./sortMenuButton";
 

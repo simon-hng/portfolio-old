@@ -1,15 +1,15 @@
+import { cx } from "class-variance-authority";
 import Image from "next/image";
 
 const Link = ({ href, text, className }) => (
-  <a className={"duration-500 font-bold text-text " + className} href={href}>
+  <a className={cx("duration-500 font-bold text-text " + className)} href={href}>
     {text}
   </a>
 );
 
 const Hero = () => (
   <div
-    className="my-20 flex flex-col space-y-5 items-center 
-            md:flex-row md:space-x-5"
+    className="my-20 flex flex-col space-y-5 items-center md:flex-row md:space-x-5"
   >
     <div className="rounded-full overflow-clip w-48 h-48 shrink-0">
       <Image

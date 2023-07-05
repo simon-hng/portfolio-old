@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
-import { sortingsType } from "./resume";
+import { type sortingsType } from "./resume";
 import IconButton from "./iconButton";
 
 interface sortMenuButtonProps {

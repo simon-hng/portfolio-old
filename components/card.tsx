@@ -10,13 +10,7 @@ export interface cardProps {
 }
 
 const Card = (props: cardProps) => (
-  <details
-    className="my-5 shadow-md
-        duration-500 cursor-pointer rounded-lg 
-        bg-base dark:bg-mantle
-        hover:shadow-lg hover:scale-105
-    "
-  >
+  <details className="my-5 shadow-md duration-500 cursor-pointer rounded-lg bg-base dark:bg-mantle hover:shadow-lg hover:scale-105">
     <summary className="duration-300 block p-5 rounded-lg">
       <h3>
         <span className="font-bold text-xl text-text">{props.headline}</span>
