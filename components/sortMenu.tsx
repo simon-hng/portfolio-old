@@ -51,8 +51,8 @@ const SortMenu = ({
 
       <ul
         key="sortMenuOptions"
-        className={`duration-500 w-full absolute opacity-0 overflow-hidden h-0 ${
-          menuOpen && "opacity-100 h-auto"
+        className={`absolute h-0 w-full overflow-hidden opacity-0 duration-500 ${
+          menuOpen && "h-auto opacity-100"
         }`}
       >
         {sortings.map((sort) => (
@@ -68,7 +68,7 @@ const SortMenu = ({
               {sortedBy === sort && (
                 <FontAwesomeIcon
                   icon={faArrowDown}
-                  className={`${sortAsc && "rotate-180"} duration-300 w-4`}
+                  className={`${sortAsc && "rotate-180"} w-4 duration-300`}
                 />
               )}
             </IconButton>

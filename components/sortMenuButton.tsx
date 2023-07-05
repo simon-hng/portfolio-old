@@ -30,7 +30,7 @@ const SortMenuButton = ({
       text={menuOpen ? "no sort" : "sort by"}
     >
       {menuOpen ? (
-        <FontAwesomeIcon icon={faXmark} className="w-4 h-6" />
+        <FontAwesomeIcon icon={faXmark} className="h-6 w-4" />
       ) : (
         <FontAwesomeIcon icon={faBars} className="w-4" />
       )}

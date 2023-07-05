@@ -62,16 +62,17 @@ const ResumeList = ({ sortedBy, sortAsc }: resumeListProps) => {
       <LayoutGroup>
         {items.map((item) => {
           if (typeof item === "string") {
-          return (
-            <motion.div layout key={item}>
-              <h2 className="font-bold text-xl text-text">{item}</h2>
-            </motion.div>)
+            return (
+              <motion.div layout key={item}>
+                <h2 className="text-xl font-bold text-text">{item}</h2>
+              </motion.div>
+            );
           }
           return (
             <motion.div layout key={`${item.headline}-${item.subheadline}`}>
               <Card {...item} />
             </motion.div>
-          )
+          );
         })}
       </LayoutGroup>
     </div>

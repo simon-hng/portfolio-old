@@ -8,7 +8,7 @@ interface headerProps {
 }
 
 const Header = ({ setIsDarkMode, isDarkMode }: headerProps) => (
-  <header className="py-10 flex flex-row-reverse space-x-2 space-x-reverse">
+  <header className="flex flex-row-reverse space-x-2 space-x-reverse py-10">
     <button
       aria-label="toggle theme"
       className="btn w-14"

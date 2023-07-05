@@ -23,8 +23,8 @@ const Layout = ({ children }: layoutProps) => {
 
   return (
     <div className={isDarkMode ? "dark mocha" : "latte"}>
-      <div className="bg-base text-subtext0 flex justify-center duration-500">
-        <div className="px-10 max-w-screen-lg">
+      <div className="flex justify-center bg-base text-subtext0 duration-500">
+        <div className="max-w-screen-lg px-10">
           <Header isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
           <main>{children}</main>

@@ -4,13 +4,13 @@
 
 @layer components {
   .btn {
-    @apply flex duration-500 py-2 px-4 
-    rounded-full border-solid border-2 
-    border-subtext0 text-subtext0
-    items-center content-center;
+    @apply flex content-center items-center rounded-full 
+    border-2 border-solid border-subtext0 
+    py-2 px-4
+    text-subtext0 duration-500;
   }
 
   .btn:hover {
-    @apply border-rosewater text-rosewater fill-rosewater;
+    @apply border-rosewater fill-rosewater text-rosewater;
   }
 }

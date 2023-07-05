@@ -10,7 +10,7 @@ interface iconButtonProps {
 const IconButton = (props: iconButtonProps) => (
   <button
     onClick={props.onClick}
-    className={`btn justify-between space-x-2 w-full bg-base ${props.className}`}
+    className={`btn w-full justify-between space-x-2 bg-base ${props.className}`}
   >
     <p className="pr-1">{props.text}</p>
     {props.children}

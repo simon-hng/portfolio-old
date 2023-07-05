@@ -4,7 +4,7 @@ import ResumeList from "./resumeList";
 import SortMenu from "./sortMenu";
 
 export const sortings = ["date", "title"];
-export type sortingsType = typeof sortings[number];
+export type sortingsType = (typeof sortings)[number];
 
 const Resume = () => {
   const [sortedBy, setSortedBy] = useState<sortingsType>();
@@ -15,7 +15,7 @@ const Resume = () => {
   return (
     <section>
       <div className="flex justify-between">
-        <h2 className="font-bold text-3xl text-text">Resume</h2>
+        <h2 className="text-3xl font-bold text-text">Resume</h2>
 
         <SortMenu {...sortMenuProps} />
       </div>
