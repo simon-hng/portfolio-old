@@ -6,7 +6,15 @@ const Home = () => (
   <>
     <Head>
       <title>Simon Huang</title>
-      <meta name="description" content="Personal portfolio" />
+      <meta
+        name="description"
+        content="Portfolio of Simon Huang. Student at TUM. Working student @siemens. GitHub addict"
+      />
+      <meta property="og:title" content="Portfolio of Simon Huang" />
+      <meta
+        property="og:description"
+        content="Portfolio of Simon Huang. Student at TUM. Working student @siemens. GitHub addict"
+      />
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
