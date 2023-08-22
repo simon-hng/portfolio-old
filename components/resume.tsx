@@ -5,7 +5,7 @@ import {
   HeartIcon,
 } from "@heroicons/react/24/outline";
 import * as React from "react";
-import { type ResumeItem } from "../assets/resume";
+import { type ResumeItem } from "../data/resume";
 import prettyDates from "../util/prettyDates";
 
 interface Props {

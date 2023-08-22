@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { resume, type ResumeItem } from "../assets/resume";
+import { resume, type ResumeItem } from "../data/resume";
 import Hero from "../components/hero";
 import Resume from "../components/resume";
 
