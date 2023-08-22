@@ -23,7 +23,7 @@ const Home = ({ items }: Props) => (
     </Head>
 
     <div className="flex justify-center">
-      <div>
+      <div className="space-y-16">
         <Hero />
         <Resume items={items} />
       </div>

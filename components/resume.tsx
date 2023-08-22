@@ -16,7 +16,7 @@ const Resume = ({ items }: Props) => {
     <section>
       <h2 className="mb-8 text-3xl font-bold text-text">Resume</h2>
 
-      <div className="mt-2">
+      <div className="mt-2 pl-5">
         {items?.map((item: ResumeItem) => (
           <article
             key={item.headline}
