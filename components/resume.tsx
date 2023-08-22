@@ -1,26 +1,48 @@
-import { useState } from "react";
+import {
+  AcademicCapIcon,
+  BuildingOffice2Icon,
+  CakeIcon,
+  HeartIcon,
+} from "@heroicons/react/24/outline";
 import * as React from "react";
-import ResumeList from "./resumeList";
-import SortMenu from "./sortMenu";
+import { type ResumeItem } from "../assets/resume";
+import prettyDates from "../util/prettyDates";
 
-export const sortings = ["date", "title"];
-export type sortingsType = (typeof sortings)[number];
-
-const Resume = () => {
-  const [sortedBy, setSortedBy] = useState<sortingsType>();
-  const [sortAsc, setSortAsc] = useState(false);
-
-  const sortMenuProps = { sortedBy, setSortedBy, sortAsc, setSortAsc };
-
+interface Props {
+  items: ResumeItem[];
+}
+const Resume = ({ items }: Props) => {
   return (
     <section>
-      <div className="flex justify-between">
-        <h2 className="text-3xl font-bold text-text">Resume</h2>
+      <h2 className="mb-8 text-3xl font-bold text-text">Resume</h2>
 
-        <SortMenu {...sortMenuProps} />
+      <div className="mt-2">
+        {items?.map((item: ResumeItem) => (
+          <article
+            key={item.headline}
+            className="relative border-l-2 border-text pl-8 pb-8 text-text last:border-0"
+          >
+            <div className="absolute top-0 left-0 h-10 w-10 translate-x-[-50%] rounded-full border-2 border-text bg-base p-2">
+              {item.category === "work" && <BuildingOffice2Icon />}
+              {item.category === "education" && <AcademicCapIcon />}
+              {item.category === "extracurricular" && <HeartIcon />}
+              {item.category === "birth" && <CakeIcon />}
+            </div>
+            <p className="text-subtext0">{prettyDates(item.date)}</p>
+            <h2 className="text-lg font-bold">
+              {item.headline}
+              {item.subheadline && `, ${item.subheadline}`} - {item.location}
+            </h2>
+            {item.description && (
+              <ul className="list-disc pl-4">
+                {item.description.map((desc, index) => (
+                  <li key={index}>{desc}</li>
+                ))}
+              </ul>
+            )}
+          </article>
+        ))}
       </div>
-
-      <ResumeList sortAsc={sortAsc} sortedBy={sortedBy} />
     </section>
   );
 };
