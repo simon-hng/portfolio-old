@@ -45,7 +45,7 @@ export const resume: ResumeItem[] = [
     ],
     category: "work",
   },
-  {
+  /*{
     headline: "SinnerSchrader",
     location: "Hamburg",
     subheadline: "Web Development Internship",
@@ -56,7 +56,7 @@ export const resume: ResumeItem[] = [
       "Proficient in utilizing NodeJS, NPM, Gulp, Grunt, and other relevant tools to streamline development processes and enhance productivity.",
     ],
     category: "work",
-  },
+  },*/
   {
     headline: "luca design",
     location: "Hamburg",
@@ -67,7 +67,7 @@ export const resume: ResumeItem[] = [
     ],
     category: "work",
   },
-  {
+  /*{
     headline: "opus5",
     location: "Hamburg",
     subheadline: "Frontend Development Internship",
@@ -77,7 +77,7 @@ export const resume: ResumeItem[] = [
       "Proficient in designing UIs using tools like Photoshop and Illustrator, translating design concepts into visually appealing web interfaces.",
     ],
     category: "work",
-  },
+  },*/
   {
     headline: "Technical University of Munich",
     location: "Munich",
@@ -97,14 +97,14 @@ export const resume: ResumeItem[] = [
     ],
     category: "education",
   },
-  {
+  /*{
     headline: "Gymnasium Klosterschule",
     location: "Hamburg",
     subheadline: "Abitur",
     date: ["2011-08-01", "2019-06-21"],
     description: ["Secondary education similar to A levels"],
     category: "education",
-  },
+  },*/
   {
     headline: "TUM.ai",
     location: "Munich",
