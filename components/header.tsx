@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
+import { faGithubAlt, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 interface headerProps {
   isDarkMode: boolean;
@@ -21,19 +22,23 @@ const Header = ({ setIsDarkMode, isDarkMode }: headerProps) => (
       )}
     </button>
 
-    <a
+    <Link
+      className="btn"
+      aria-label="linkedin account"
+      href="https://www.linkedin.com/in/simon-hng"
+      target="_blank"
+    >
+      <FontAwesomeIcon icon={faLinkedinIn} className="h-5" />
+    </Link>
+
+    <Link
       className="btn"
       aria-label="github account"
       href="https://www.github.com/simon-hng/"
-      rel="noreferrer"
       target="_blank"
     >
       <FontAwesomeIcon icon={faGithubAlt} className="h-5" />
-    </a>
-
-    <a className="btn" aria-label="email" href="mailto:simon.huang@tum.de">
-      <FontAwesomeIcon icon={faEnvelope} className="h-5" />
-    </a>
+    </Link>
   </header>
 );
 
