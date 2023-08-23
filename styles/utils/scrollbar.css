@@ -1,0 +1,11 @@
+@layer utilities {
+  .scrollbar {
+    &::-webkit-scrollbar {
+      @apply bg-mantle;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply w-16 rounded-2xl bg-surface0;
+    }
+  }
+}
