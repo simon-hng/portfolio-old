@@ -1,17 +1,5 @@
-import { cx } from "class-variance-authority";
 import Image from "next/image";
-
-interface LinkProps {
-  href: string;
-  text: string;
-  className?: string;
-}
-
-const Link = ({ href, text, className }: LinkProps) => (
-  <a className={cx("font-bold text-text duration-500", className)} href={href}>
-    {text}
-  </a>
-);
+import Link from "next/link";
 
 const Hero = () => (
   <div className="my-20 flex flex-col items-center space-y-5 md:flex-row md:space-x-5">
@@ -32,15 +20,17 @@ const Hero = () => (
         Informatics student at{" "}
         <Link
           href="https://www.in.tum.de/"
-          text="TUM"
-          className="hover:text-tum-blue"
-        />
-        , working student at{" "}
+          className="font-semibold text-text duration-300 hover:text-[#0065bd]"
+        >
+          TUM
+        </Link>
+        , Full Stack Developer at{" "}
         <Link
           href="https://www.siemens.com"
-          text="Siemens"
-          className="hover:text-siemens-petrol"
-        />
+          className="font-semibold text-text duration-300 hover:text-[#91cb3e]"
+        >
+          SelectCode
+        </Link>
         .
       </p>
     </div>

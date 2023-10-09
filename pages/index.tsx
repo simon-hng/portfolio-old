@@ -12,12 +12,12 @@ const Home = ({ items }: Props) => (
       <title>Simon Huang</title>
       <meta
         name="description"
-        content="Portfolio of Simon Huang. Student at TUM. Working student @siemens. GitHub addict"
+        content="Portfolio of Simon Huang. Student at TUM. Working student @SelectCode"
       />
       <meta property="og:title" content="Portfolio of Simon Huang" />
       <meta
         property="og:description"
-        content="Portfolio of Simon Huang. Student at TUM. Working student @siemens. GitHub addict"
+        content="Portfolio of Simon Huang. Student at TUM. Working student @SelectCode"
       />
       <link rel="icon" href="/favicon.ico" />
     </Head>
