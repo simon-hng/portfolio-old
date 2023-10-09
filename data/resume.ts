@@ -9,12 +9,22 @@ export type ResumeItem = {
 
 export const resume: ResumeItem[] = [
   {
+    headline: "SelectCode GmbH",
+    location: "Munich",
+    subheadline: "Working Student - Full Stack Development",
+    date: ["2023-10-01", "now"],
+    description: [
+      "Played a key role in enhancing everbay.de, a prominent recruiting platform utilized by multiple DAX firms, by implementing innovative features that improved user experience, and increased overall efficiency.",
+    ],
+    category: "work",
+  },
+  {
     headline: "Siemens AG",
     location: "Munich",
-    subheadline: "Working student",
+    subheadline: "Working Student - Software Engineering",
     date: ["2021-11-01", "2023-09-01"],
     description: [
-      "Led development of an internal service tool, streamlining processes and improving team efficiency.",
+      "Led development for the frontend of an internal service tool written in React and NextJS",
       "Implemented GitLab CI/CD for continuous integration and deployment.",
       "Managed infrastructure in AWS using Terraform, optimizing resource utilization and reducing complexity.",
       "Utilized OpenSearch for monitoring and data analysis, providing valuable insights for error detection.",
@@ -108,12 +118,22 @@ export const resume: ResumeItem[] = [
   {
     headline: "TUM.ai",
     location: "Munich",
-    subheadline: "Active Member",
+    subheadline: "Teamlead Software Development",
     date: ["2023-06-01", "now"],
     description: [
       "Led technical projects for the development and implementation of an internal brand and design system, ensuring consistent and cohesive visual identity across company products and services.",
       "Played a key role in the development of internal tools, utilizing Next.js, Python, and various SaaS solutions to streamline workflows and enhance infrastructure capabilities.",
       "Actively participated in workshops covering a diverse range of topics, including Responsible AI and Communication Skills, fostering both technical and soft skill development in areas such as AI ethics and effective communication.",
+    ],
+    category: "extracurricular",
+  },
+  {
+    headline: "Google Developer Student Club",
+    location: "Munich",
+    subheadline: "Core Team",
+    date: ["2023-10-01", "now"],
+    description: [
+      "Organized a series of impactful events and workshops focused on technology, careers, and various Google-related topics, fostering knowledge-sharing and professional development within the community.",
     ],
     category: "extracurricular",
   },
